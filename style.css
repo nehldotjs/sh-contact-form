@@ -137,7 +137,6 @@ body {
     position: absolute;
     display: flex;
     z-index: -1;
-    background-color: red;
 }
 
 .imageWrapper img {
