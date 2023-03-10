@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sectionWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.section1 {
+    margin: auto;
+    height: 100vh;
+    width: 30%;
+    left: 0px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.section1ContentWWrapper {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.detailsWrapper {
+    margin: auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconWrapper {
+    align-items: center;
+    display: flex;
+    color: white;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: blue;
+}
+
+.iconWrapper .icon {
+    height: a;
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconWrapper i {
+    position: relative;
+    width: auto;
+    display: flex;
+    height: 50px;
+    display: flex;
+    z-index: 999;
+    color: red;
+    background-color: yello;
+}
+
+
+
+
+
+
+
+.imageWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+.imageWrapper img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section2 {
+    margin: auto;
+    height: 100vh;
+    width: 70%;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    background-color: #000;
+}
+
+.formWrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: -10px 2px 10px #00000079;
+    background-color: #fbfbfb;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.FormContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.ContactHeader {
+    font-size: 45px;
+    display: flex;
+    font-weight: lighter;text-underline-offset: 0.2em;
+    text-decoration: underline;text-decoration-thickness: 1px;
+    font-family: Lavishly Yours;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    width: 60%;
+    /* background-color: red; */
+
+}
+
+.inputContainer .inputWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox .genderProperty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputContainer .inputWrapper h3 {
+    font-size: 15px;
+    display: flex;
+    font-family: dancing script;
+}
+
+.inputContainer .inputWrapper input {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.submitButtonWrapper {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.submitButtonWrapper button {
+    transition: 350ms all ease;
+    padding: 10px 20px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: dancing script;
+    background-color: transparent;
+}
+
+.submitButtonWrapper button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
