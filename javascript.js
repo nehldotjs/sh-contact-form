@@ -1,11 +1,20 @@
 // Select the submit button and the form from the DOM
 const submitButton = document.getElementById("submitBtn");
 const form = document.getElementById("form");
-const name =document.getElementById("nameInput")
-const email =document.getElementById("emailInput")
-const phone =document.getElementById("phoneInput")
-const gender =document.getElementById("genderInput")
+const name = document.getElementById("nameInput");
+const email = document.getElementById("emailInput");
+const phone = document.getElementById("phoneInput");
+const gender = document.getElementById("genderInput");
+const sect2 = document.getElementById("section2");
+const contactToggleBtn = document.getElementById("contactToggleBtn");
+const toggleSwitch = document.getElementById("toggleOffBtn");
 
+contactToggleBtn.addEventListener("click", function () {
+  sect2.classList.add("transform");
+});
+toggleSwitch.addEventListener("click", function () {
+  sect2.classList.remove("transform");
+});
 // Add an event listener to the form that triggers when it's submitted
 form.addEventListener("submit", async (e) => {
   // Prevent the default form submission behavior
