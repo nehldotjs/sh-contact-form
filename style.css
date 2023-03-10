@@ -63,30 +63,43 @@ body {
     color: white;
     height: auto;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background-color: blue;
+    padding: 5px;
 }
 
 .iconWrapper .icon {
-    height: a;
+    height: auto;
     width: auto;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-.iconWrapper i {
+.iconWrapper .icon i {
+    justify-content: center;
+    align-items: center;
     position: relative;
+    display: flex;
+    width: auto;
+    height: 100%;
     width: auto;
     display: flex;
-    height: 50px;
-    display: flex;
-    z-index: 999;
-    color: red;
-    background-color: yello;
+    margin: auto;
+    color: white;
+    opacity: .5;
+    margin: auto;
+    margin: auto;
+    font-size: 30px;
+    transition: 350ms all ease;
+
+}
+
+.iconWrapper .icon i:hover {
+    opacity: 1;
 }
 
 
@@ -170,8 +183,10 @@ body {
 .ContactHeader {
     font-size: 45px;
     display: flex;
-    font-weight: lighter;text-underline-offset: 0.2em;
-    text-decoration: underline;text-decoration-thickness: 1px;
+    font-weight: lighter;
+    text-underline-offset: 0.2em;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
     font-family: Lavishly Yours;
 }
 
@@ -195,6 +210,7 @@ body {
     width: 100%;
     height: auto;
     gap: 0px;
+    border-bottom: 1px solid black;
 }
 
 .checkbox {
@@ -214,6 +230,7 @@ body {
 .inputContainer .inputWrapper h3 {
     font-size: 15px;
     display: flex;
+    font-weight: lighter;
     font-family: dancing script;
 }
 
@@ -223,7 +240,6 @@ body {
     display: flex;
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid black;
     padding: 0px 10px;
     outline: none;
 }

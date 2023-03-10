@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-As4C4p4yzzMn8H32w2YbYgS0n9n9LZPtp88TzlzB/K6T/FvM2VL3W8yho6YfO6UJk6R9ufp8sAs4PomGp4Hvuw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha384-C4W8In4MZ4klZeL0ZzUhJsfILWwmXm+/1Ag+wEiLkFX2xR/8RvYI2tERZmllMgCr" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Lavishly+Yours&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Document</title>
 </head>
+
 
 <body>
     <section class="sectionWrapper">
@@ -39,43 +41,41 @@
         </section>
         <section class="section2">
             <div class="formWrapper">
-                <form class="FormContainer">
+                <form class="FormContainer" id="form">
                     <h1 class="ContactHeader">
                         Contact Us
                     </h1>
                     <div class="inputContainer">
                         <div class="inputWrapper">
                             <h3>Name</h3>
-                            <input type="text" />
+                            <input type="text" required id="nameInput" />
                         </div>
                         <div class="inputWrapper">
                             <h3>Email</h3>
-                            <input type="text" />
+                            <input type="email" required id="emailInput" />
                         </div>
                         <div class="inputWrapper">
                             <h3>Phone</h3>
-                            <input type="text" />
+                            <input type="number" required id="phoneInput" />
                         </div>
                         <div class="inputWrapper">
                             <h3>Gender</h3>
                             <div class="checkbox">
-                                <div class="genderProperty">
-                                    <input type="checkbox" value="male" />
-                                    <h5>Male</h5>
-                                </div>
-                                <div class="genderProperty">
-                                    <input type="checkbox" value="female" />
-                                    <h5>female</h5>
-                                </div>
+                                <select>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+
                             </div>
                         </div>
                         <div class="inputWrapper">
-                            <h3>Pass Word</h3>
-                            <input type="password" />
+                            <h3>Password</h3>
+                            <input type="password" required id="passwordInput" />
                         </div>
                     </div>
+
                     <div class="submitButtonWrapper">
-                        <button type="button" class="SubmitBtn">
+                        <button type="submit" class="SubmitBtn" id="submitBtn">
                             Submit
                         </button>
                     </div>
@@ -83,6 +83,7 @@
             </div>
         </section>
     </section>
+    <script src="./javascript.js"></script>
 </body>
 
 </html>
