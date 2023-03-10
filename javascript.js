@@ -1,48 +1,28 @@
-// Select the submit button and the form from the DOM
+// Get the DOM elements
 const submitButton = document.getElementById("submitBtn");
 const form = document.getElementById("form");
-const name = document.getElementById("nameInput");
-const email = document.getElementById("emailInput");
-const phone = document.getElementById("phoneInput");
-const gender = document.getElementById("genderInput");
-const sect2 = document.getElementById("section2");
+const nameInput = document.getElementById("nameInput");
+const emailInput = document.getElementById("emailInput");
+const phoneInput = document.getElementById("phoneInput");
+const passWordInput = document.getElementById("passwordInput");
+const genderInput = document.getElementById("genderInput");
+const section2 = document.getElementById("section2");
 const contactToggleBtn = document.getElementById("contactToggleBtn");
-const toggleSwitch = document.getElementById("toggleOffBtn");
+const toggleOffBtn = document.getElementById("toggleOffBtn");
 
-contactToggleBtn.addEventListener("click", function () {
-  sect2.classList.add("transform");
-});
-toggleSwitch.addEventListener("click", function () {
-  sect2.classList.remove("transform");
-});
-// Add an event listener to the form that triggers when it's submitted
-form.addEventListener("submit", async (e) => {
-  // Prevent the default form submission behavior
-  e.preventDefault();
-  // Define a function that performs an action and returns a promise
-  async function performAction() {
-    // Perform the action here and wait for it to complete
-    const result = await someAction(console.log("MSSG FROM CONSOLE"));
-    // Return a resolved promise with the result
-    return Promise.resolve("Action completed successfully!");
-  }
-  try {
-    // Call the performAction function and wait for it to complete
-    const result = await performAction();
-
-    // Show an alert with the result and log it to the console
-    alert(result);
-    console.log(result);
-  } catch (error) {
-    // Log any errors to the console
-    console.error(error);
-  }
+// Add event listeners
+contactToggleBtn.addEventListener("click", () => {
+  section2.classList.add("transform");
 });
 
-// Define a helper function that performs an action and returns a promise
+toggleOffBtn.addEventListener("click", () => {
+  section2.classList.remove("transform");
+});
+
+// Define the someAction function
 async function someAction() {
   // Perform the action here and wait for it to complete
-  const result = await new Promise((resolve, reject) => {
+  const result = await new Promise((resolve) => {
     setTimeout(() => {
       resolve("Action completed successfully!");
     }, 1000);
@@ -51,3 +31,25 @@ async function someAction() {
   // Return a resolved promise with the result
   return Promise.resolve(result);
 }
+
+form.addEventListener("submit", async (e) => {
+  // Prevent the default form submission behavior
+  e.preventDefault();
+
+  try {
+    // Perform the action and wait for it to complete
+    const result = await someAction();
+
+    // Show an alert with the result and log it to the console
+    alert(result);
+    // Reset the form inputs
+    nameInput.value = "";
+    emailInput.value = "";
+    phoneInput.value = "";
+    genderInput.value = "";
+    passWordInput.value = "";
+  } catch (error) {
+    // Log any errors to the console
+    console.error(error);
+  }
+});
