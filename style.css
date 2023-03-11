@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+[data-aos] {
+    transition-duration: 1s;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     display: flex;
     margin: auto;
@@ -93,7 +107,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    padding: 5px;
+    padding: 30px 5px;
 }
 
 .iconWrapper .icon {
@@ -217,8 +231,8 @@ body {
     padding-bottom: 5px;
     border-bottom: 1px solid black;
 }
-.inputContainer
-.genderInput {
+
+.inputContainer .genderInput {
     gap: 5px;
     border: none;
 }

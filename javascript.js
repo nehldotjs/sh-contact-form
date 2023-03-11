@@ -9,7 +9,12 @@ const genderInput = document.getElementById("genderInput");
 const section2 = document.getElementById("section2");
 const contactToggleBtn = document.getElementById("contactToggleBtn");
 const toggleOffBtn = document.getElementById("toggleOffBtn");
-
+AOS.init();
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  delay: 100
+});
 // Add event listeners
 contactToggleBtn.addEventListener("click", () => {
   section2.classList.add("transform");
