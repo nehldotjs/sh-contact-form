@@ -9,15 +9,17 @@ const genderInput = document.getElementById("genderInput");
 const section2 = document.getElementById("section2");
 const contactToggleBtn = document.getElementById("contactToggleBtn");
 const toggleOffBtn = document.getElementById("toggleOffBtn");
-AOS.init();
-AOS.init({
-  duration: 800,
-  easing: "ease-in-out",
-  delay: 100
-});
+
+// AOS.init({
+//   duration: 800,
+//   easing: "ease-in-out",
+//   delay: 100
+// });
+
 // Add event listeners
 contactToggleBtn.addEventListener("click", () => {
   section2.classList.add("transform");
+  console.log("hello");
 });
 
 toggleOffBtn.addEventListener("click", () => {
@@ -37,6 +39,7 @@ async function someAction() {
   return Promise.resolve(result);
 }
 
+// Add submit event listener to the form
 form.addEventListener("submit", async (e) => {
   // Prevent the default form submission behavior
   e.preventDefault();
@@ -47,6 +50,7 @@ form.addEventListener("submit", async (e) => {
 
     // Show an alert with the result and log it to the console
     alert(result);
+
     // Reset the form inputs
     nameInput.value = "";
     emailInput.value = "";
